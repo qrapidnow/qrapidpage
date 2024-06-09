@@ -1,0 +1,312 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.header {
+  text-decoration-skip: \\;
+}
+.main-container {
+  background-color: black;
+  padding: 38px 120px;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 58px;
+}
+
+.nav-links li {
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #00bf63;
+}
+
+.for-restaurant {
+  display: flex;
+  padding: 14px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.for-restaurant:hover {
+  background-color: #00bf63;
+  color: white;
+}
+
+/* Title and Description */
+.main-title {
+  font-size: 64px;
+  color: white;
+  font-weight: 600;
+  width: 48%;
+  margin: 50px 0 28px;
+}
+
+.main-description {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  width: 36%;
+}
+
+.main-free-demo {
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: #f2e982;
+  padding: 12px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main-free-demo:hover {
+  background-color: #e0d769;
+}
+
+/* Promo Section */
+.promo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 50px 0;
+  background-color: #00bf63;
+  border-radius: 26px;
+  flex-wrap: wrap;
+  animation-name: phoneAnimation;
+  animation-duration: 1s;
+}
+
+@keyframes phoneAnimation {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.promo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  text-align: left;
+}
+
+.promo-image {
+  position: absolute;
+  right: 50px;
+  transform: rotate(8deg);
+}
+
+.main-image {
+  height: 512px;
+  position: absolute;
+  top: -340px;
+  right: inherit;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 30px;
+  }
+
+  .promo-image {
+    right: 20px;
+    top: -250px;
+  }
+
+  .main-image {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .main-title {
+    font-size: 48px;
+    width: 70%;
+  }
+
+  .promo-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .promo-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  .promo-image {
+    position: static;
+    transform: rotate(0deg);
+    margin-top: 20px;
+  }
+
+  .main-image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main-title {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-description {
+    font-size: 14px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .main-free-demo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-image {
+    height: 300px;
+  }
+
+  .promo-section {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-container {
+    padding: 20px;
+  }
+
+  .nav-links {
+    gap:22px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-title {
+    font-size: 32px;
+    width: 64%;
+    text-align: left;
+    padding: 0%;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-description {
+    font-size: 10px;
+    width: 60%;
+    text-align: left;
+  }
+
+  .main-free-demo {
+    width: 32%;
+    text-align: left;
+  }
+
+  .main-image {
+    height: 250px;
+    position: absolute;
+    bottom: -38px;
+    right: -66px;
+    rotate: 6deg;
+    top: -198px;
+  }
+
+  .promo-section {
+    border-radius: 16px;
+    height: 62px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-container {
+    padding: 10px;
+  }
+
+  .main-title {
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-description {
+    font-size: 12px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .main-free-demo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-image {
+    height: 200px;
+  }
+
+  .promo-section {
+    border-radius: 16px;
+  }
+}

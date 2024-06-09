@@ -1,0 +1,174 @@
+/* Base styles */
+.price-container {
+  background-color: black;
+  padding: 32px;
+}
+
+.price-container > div {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.price-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.price-trial {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding-bottom: 37px;
+}
+
+.price-section {
+  display: flex;
+  justify-content: center;
+  gap: 66px;
+  align-items: flex-start;
+}
+
+.price-feature {
+  padding-top: 20px;
+}
+
+.price-feature-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 26px;
+}
+
+.price-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding-top: 76px;
+}
+
+.price-feature-item {
+  font-size: 16px;
+  color: white;
+}
+
+.price-plan,
+.price-plann {
+  padding: 20px;
+  text-align: center;
+}
+
+.price-plan-box {
+  padding: 16px;
+  border-radius: 20px;
+  width: 136px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.price-plan-price,
+.price-plan-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+.price-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.price-icon {
+  height: 20px;
+  background-color: white;
+}
+
+.price-icon-img {
+  height: 20px;
+}
+
+@media (max-width: 360px) {
+  .price-plan,
+  .price-plann {
+    width: 66%;
+    height: 20%;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .price-plan-box {
+    width: 36%;
+  }
+  .price-plan-box-text {
+    font-size: 20px;
+  }
+  .price-section {
+    gap: 2px;
+    display: flex;
+    padding: 0;
+  }
+  .price-icon {
+    padding: 0;
+  }
+  
+  .price-plan-name,
+  .price-plan-price,
+  .price-feature-item {
+    font-size: 10px;
+  }
+  
+  .price-feature-list {
+    font-size: 20px;
+    padding: 0;
+    width: auto;
+  }
+  
+  .price-feature-title,
+  .price-title {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .price-container {
+    padding: 16px;
+  }
+  
+  .price-title {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+  
+  .price-trial {
+    font-size: 14px;
+    padding-bottom: 32px;
+  }
+  
+  .price-section {
+    gap: 50px;
+  }
+  
+  .price-feature-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .price-feature-item {
+    font-size: 14px;
+  }
+  
+  .price-plan-box {
+    width: 120px;
+  }
+  
+  .price-plan-price,
+  .price-plan-name {
+    font-size: 18px;
+  }
+}

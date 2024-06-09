@@ -1,0 +1,155 @@
+.main {
+   
+    background-image: url('../../public/Image/Bg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  }
+
+.main {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    padding-bottom: 125px;
+  }
+  
+  .navbar-container {
+    margin: 0 123px;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 37px;
+  }
+  
+  .logo-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .logo {
+    height: 44px;
+  }
+  
+  .brand-name {
+    font-size: 29.2px;
+    font-weight: 600;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-item {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .highlighted-link {
+    font-size: 16px;
+    padding: 8px 10px;
+    background-color: rgb(238, 234, 234);
+    border-radius: 40px;
+  }
+  
+  .main-title {
+    font-size: 63.4px;
+    font-weight: 800;
+    padding-top: 78px;
+    width: 50%;
+  }
+  
+  .description {
+    font-size: 16px;
+    width: 26%;
+    font-weight: 400;
+    padding-top: 40px;
+  }
+  
+  .cta-container {
+    padding-top: 55px;
+  }
+  
+  .cta-button {
+    padding: 8px 6px;
+    background-color: #F2E982;
+    border-radius: 8px;
+    width: 11%;
+    display: flex;
+    align-items: center;
+    color: #333;
+  }
+  
+  /* Responsive styles for screens with a width of 360px or less */
+  @media (max-width: 360px) {
+    .navbar-container {
+      margin: 0 10px;
+      text-align: left;
+      
+    }
+
+  
+    .navbar {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        padding-right: 38px;
+      }
+  
+    .main-title {
+      font-size: 36px;
+      width: 100%;
+    }
+  
+    .description {
+      width: 100%;
+    }
+  
+    .cta-button {
+      width: 34%;
+      margin: 0 auto;
+    }
+    .nav-item{
+      font-size: 17px;
+    }
+  }
+  
+  /* Additional media query for even smaller screens (320px or less) */
+  @media (max-width: 320px) {
+    .brand-name {
+      font-size: 18px;
+    }
+  
+    .nav-item {
+      font-size: 28px;
+    }
+  
+    .highlighted-link {
+      font-size: 12px;
+    }
+  
+    .main-title {
+      font-size: 30px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  
+    .cta-button {
+      width: 36%;
+    }
+  }
+  

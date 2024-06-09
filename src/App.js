@@ -1,24 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './Component/Footer/Footer';
+import Mid from './Component/Mid/Mid';
+import Navbar from './Component/Navbar';
+import Partner from './Component/Partner/Partner';
+import Reward from './Component/Reward/Reward';
+import Demo from './Demo/Demo';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+function MainLayout() {
+  return (
+    <>
+      <Navbar/>
+      <Mid/>
+      <Partner/>
+      <Reward/>
+      <Footer/>
+    </>
+  );
+}
+
+function DemoLayout() {
+  return (
+    <>
+      <Demo />
+    </>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainLayout />} />
+        <Route path="/demo" element={<DemoLayout />} />
+      </Routes>
+    </Router>
   );
 }
 
