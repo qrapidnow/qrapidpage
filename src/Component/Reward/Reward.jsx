@@ -5,7 +5,7 @@ const Reward = () => {
   return (
     <div className="reward-container">
       <div className="reward-title">
-        <samp className="highlight">Reward</samp> Program Just For You!
+        <spam style={{color:"green"}}>Reward</spam> Program Just For You!
       </div>
       <div className="reward-cards">
         {[

@@ -28,6 +28,7 @@
   font-size: 24px;
   font-weight: 800;
   width: 120px;
+  font-family: "poppins";
 }
 
 .arrow-icon {
@@ -39,7 +40,7 @@
   flex-wrap: wrap;
   gap: 36px;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 45px;
   width: 80%;
 }
 
@@ -47,11 +48,13 @@
   padding: 4px;
   background-color: #f2e982;
   color: black;
-  width: 86px;
+  width: 100px;
   border-radius: 22px;
   align-items: center;
   display: flex;
   justify-content: center;
+  font-size: 16px;
+  font-family: "open-sauce";
 }
 
 .card-content {
@@ -64,38 +67,103 @@
   font-size: 24px;
   font-weight: 600;
   width: 120px;
+  display: flex;
+  align-items: center;
 }
 
 .arrow-icon {
-  height: 60px;
+  height: 64px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon:hover {
+  transform: scale(1.2); /* Increase the size by 20% on hover */
 }
 .Aaaa {
   font-size: 65px;
+  font-weight: 700;
 }
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 768px) {
+  .restaurant-card {
+    width: 220px;
+  }
+  .restaurant-name {
+    font-size: 20px;
+    width: 100px;
+  }
+  .arrow-icon {
+    height: 50px;
+  }
+  .location-tag {
+    width: 70px;
+  }
+  .Aaaa {
+    font-size: 50px;
+  }
+  .arrow-icon {
+    height: 60px;
+  }
+  .card-content {
+    gap: 70px;
+  }
+}
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .restaurant-card {
+    width: 240px;
+  }
+  .restaurant-name {
+    font-size: 18px;
+    width: 90px;
+  }
+  .arrow-icon {
+    height: 40px;
+  }
+  .location-tag {
+    width: 102px;
+  }
+  .Aaaa {
+    font-size: 40px;
+  }
+  .arrow-icon {
+    height: 60px;
+  }
+  .card-content {
+    gap: 86px;
+  }
+}
+
 @media (max-width: 360px) {
   .restaurant-card {
-    width: 240px; 
+    width: 240px;
   }
   .Aaaa {
     font-size: 30px;
   }
 
   .location-tag {
-    width: 76px; 
+    width: 102px;
   }
 
   .restaurant-name {
-    width: 100px; 
+    width: 100px;
+  }
+  .arrow-icon {
+    height: 60px;
+  }
+  .card-content {
+    gap: 62px;
   }
 }
 
 @media (max-width: 320px) {
   .restaurant-card {
-    width: 200px; 
+    width: 200px;
   }
 
   .location-tag {
-    width: 66px; 
+    width: 100px;
   }
 
   .restaurant-name {
@@ -103,5 +171,48 @@
   }
   .Aaaa {
     font-size: 26px;
+  }
+  .arrow-icon {
+    height: 60px;
+  }
+  .card-content {
+    gap: 62px;
+  }
+}
+@media (max-width: 414px) {
+  .Aaaa {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .arrow-icon {
+    height: 60px;
+  }
+}
+@media (max-width: 470px) {
+  .Aaaa {
+    width: 80%;
+    text-align: center;
+  }
+}
+@media (max-width: 410px) {
+  .Aaaa {
+    gap: 10px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  .Aaaa {
+    display: block;
+    flex-direction: column;
+  }
+}
+@media (max-width: 360px) {
+  .Aaaa {
+    display: block;
+    /* flex-direction: column; */
+    font-size: xx-large;
   }
 }

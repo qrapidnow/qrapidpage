@@ -1,0 +1,206 @@
+/* About.css */
+
+.about-container {
+    width: 60%;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .about-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    line-height: 1.6;
+  }
+  /* Container for the header */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the logo and text */
+.logo-text-container {
+  display: flex;
+  gap: 12px;
+}
+
+/* Styling for the logo image */
+.logo-image {
+  height: 40px;
+}
+
+/* Styling for the QRapid text */
+.logo-text {
+  font-size: 18px;
+}
+
+/* Navigation links container */
+.nav-links-new {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual navigation item */
+.nav-item-new {
+  margin-right: 20px;
+}
+
+/* Highlighted navigation link */
+.highlighted-link-new {
+  font-weight: bold;
+}
+
+/* About page container */
+.about-container {
+  padding: 20px;
+}
+
+/* Headings */
+.about-container h1,
+.about-container h2 {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Paragraph text */
+.about-container p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* List styling */
+.about-container ul {
+  margin-left: 20px;
+}
+
+.about-container li {
+  margin-bottom: 8px;
+}
+
+  /* Styl.css */
+
+.faq-container {
+  width: 100%;
+  display: flex;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-title-container {
+  width: 50%;
+}
+
+.faq-title {
+  font-size: 38px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-items-container {
+  width: 50%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.faq-item {
+  width: 100%;
+}
+
+.faq-question {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.faq-question-title {
+  font-size: 24px;
+  width: 80%;
+}
+
+.faq-toggle-icon {
+  height: 20px;
+  cursor: pointer;
+}
+
+.faq-answer {
+  opacity: 0.6;
+}
+
+.faq-divider {
+  opacity: 0.4;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 20px;
+}
+
+.contact-title {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.contact-description {
+  font-size: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-icon {
+  height: 30px;
+}
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-heading {
+      font-size: 28px;
+    }
+  
+    .about-content {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-heading {
+      font-size: 24px;
+    }
+  
+    .about-content {
+      font-size: 14px;
+    }
+  }
+  

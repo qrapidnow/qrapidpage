@@ -7,8 +7,21 @@ const Footer = () => {
       <div className="sub_footer">
         <div className="new">
           <div className="sub_footer_left">
-            <div className="new3">QRapid</div>
-            <div style={{ fontSize: "16px", width: "40%" }}>
+            <div style={{ display: "flex", gap: "12px" }}>
+              <img
+                style={{ height: "40px" }}
+                src="../../Image/black.png"
+                alt=""
+              />
+              <div className="new3">QRapid</div>
+            </div>
+            <div
+              style={{
+                fontSize: "16px",
+                width: "46%",
+                fontFamily: "Quicksand",
+              }}
+            >
               Stay in the loop and sign up for the QRapid for more:
             </div>
 
@@ -30,13 +43,12 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="new5" >
+              <div className="new5">
                 <div class="container2">
                   <p style={{ fontSize: "16px", paddingLeft: "14px" }}>
                     Are You a Restaurant Owner?
                   </p>
                   <button
-
                     style={{
                       backgroundColor: "#F2E982",
                       padding: "14px",
@@ -44,8 +56,11 @@ const Footer = () => {
                     }}
                     id="submitButton"
                   >
-                    <Link  style={{textDecoration:"none",color:"black"}}to="/demo">
-                    Click Me
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }}
+                      to="/demo"
+                    >
+                      Click Me
                     </Link>
                   </button>
                 </div>
@@ -96,50 +111,35 @@ const Footer = () => {
                   Social
                 </div>
                 <div style={{ fontSize: "18px" }}>Facebook</div>
-                <div style={{ fontSize: "18px" }}>Instagram</div>
-                <div style={{ fontSize: "18px" }}>Youtube</div>
-                <div style={{ fontSize: "18px" }}>Twitter</div>
-              </div>
-            </div>
-
-            <div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "12px",
+                <a
+                 style={{
+                  textDecoration:"none",color:"black"
                 }}
-              >
-                <div style={{ fontSize: "18px", fontWeight: "800" }}>
-                  Contact Us
-                </div>
-
-                <div style={{ display: "flex", gap: "12px" }}>
-                  <img
-                    style={{ height: "18px" }}
-                    src="./Image/call.png"
-                    alt=""
-                  />
-                  <div>9987599124</div>
-                </div>
-
-                <div style={{ display: "flex", gap: "12px" }}>
-                  <img
-                    style={{ height: "18px" }}
-                    src="./Image/email.png"
-                    alt=""
-                  />
-                  <div>contact@qrapid.io</div>
-                </div>
-
-                <div style={{ display: "flex", gap: "12px" }}>
-                  <img
-                    style={{ height: "18px" }}
-                    src="./Image/gps.png"
-                    alt=""
-                  />
-                  <div>Worli, Mumbai</div>
-                </div>
+                  href="https://www.instagram.com/qrapid.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div style={{ fontSize: "18px" }}>Instagram</div>
+                </a>
+                <a
+                 style={{
+                  textDecoration:"none",color:"black"
+                }}
+                  href="https://www.linkedin.com/company/qrapidnow/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div style={{ fontSize: "18px" }}>linkedin</div>
+                </a>
+                <a style={{
+                  textDecoration:"none",color:"black"
+                }}
+                  href="https://youtube.com/@qrapidnow?si=2ISON4k_IMVRORcY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div style={{ fontSize: "18px" }}>youtube</div>
+                </a>
               </div>
             </div>
           </div>

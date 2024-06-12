@@ -6,6 +6,9 @@ import Partner from './Component/Partner/Partner';
 import Reward from './Component/Reward/Reward';
 import Demo from './Demo/Demo';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import About from './New/About';
+import New from './New/New';
+import Contact from './New/Contact';
 
 function MainLayout() {
   return (
@@ -33,6 +36,10 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />} />
         <Route path="/demo" element={<DemoLayout />} />
+        <Route path='/about' element={<New/>}/>
+        <Route path='/footer' element={<Footer/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+
       </Routes>
     </Router>
   );

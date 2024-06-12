@@ -5,14 +5,15 @@
 }
 
 .last-title {
-  font-size: 46px;
+  font-size: 48px;
   font-weight: 800;
   text-align: center;
+  font-family: "poppins";
 }
 
 .last-description {
   font-size: 32px;
-  width: 45%;
+  width: 48%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +23,7 @@
 
 .last-button {
   padding: 8px;
-  width: 22%;
+  width: 18%;
   background-color: #F2E982;
   border-radius: 20px;
   display: flex;
@@ -35,7 +36,34 @@
   font-size: 22px;
   font-weight: 200;
 }
+/* Media query for screens with a width of 768px or less */
+@media (max-width: 768px) {
+  .last-container {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
 
+  .last-title {
+    font-size: 32px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .last-description {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .last-button {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .last-button button {
+    font-size: 18px;
+  }
+}
 /* Media query for screens with a width of 480px or less */
 @media (max-width: 480px) {
   .last-container {
@@ -106,11 +134,11 @@
 
   .last-description {
     font-size: 14px;
-    width: 100%;
+    width: 60%;
   }
 
   .last-button {
-    width: 80%;
+    width: 44%;
   }
 
   .last-button button {

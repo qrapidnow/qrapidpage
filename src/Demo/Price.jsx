@@ -4,7 +4,7 @@ import "./Price.css";
 const Price = () => {
   return (
     <div className="price-container">
-      <div>
+     
         <div className="price-title">
           Looking for <span style={{ color: "green" }}>a Deal?</span>
         </div>
@@ -50,7 +50,7 @@ const Price = () => {
             </div>
           </div>
         </div>
-      </div>
+   
     </div>
   );
 };

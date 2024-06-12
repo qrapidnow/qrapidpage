@@ -1,11 +1,139 @@
-.benefits-title{
+.benefits-title {
   width: 66%;
   font-size: 64px;
   display: flex;
   justify-content: center;
   font-weight: 800;
 }
+.new-reward-container {
+  display: flex;
+  align-items: center;
+  padding-top: 75px;
+  flex-direction: column;
+  padding-bottom: 117px;
+  background-image: url("../Demo/img/bg5.png");
+}
 
+.new-benefits-title {
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+  width: 46%;
+  font-family: "poppins";
+}
+
+.new-highlight {
+  color: #00bf63;
+}
+
+.new-reward-cards {
+  padding-top: 54px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+}
+
+.new-reward-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00bf63;
+  border-radius: 20px;
+  padding: 52px;
+  width: 218px;
+  box-sizing: border-box;
+}
+
+.new-reward-card-content {
+  text-align: center;
+  color: white;
+}
+
+.new-reward-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.new-reward-card-text {
+  font-size: 16px;
+  color: black;
+}
+
+.new-reward-card-image {
+  position: absolute;
+  top: 94%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+}
+
+.new-reward-card img {
+  height: 100px;
+}
+@media (max-width: 768px) {
+  .benefits-title {
+    font-size: 48px;
+    display: contents;
+  }
+
+  .benefits-container {
+    padding: 16px;
+  }
+
+  .benefits-card {
+    width: 32%;
+    margin-bottom: 16px;
+    height: auto;
+  }
+
+  .reward-card-title {
+    font-size: 18px;
+  }
+
+  .reward-card-text {
+    font-size: 14px;
+  }
+
+  .reward-card-image img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* Media query for screens with a width of 480px or less */
+@media (max-width: 480px) {
+  .benefits-title {
+    font-size: 40px;
+  }
+
+  .benefits-container {
+    padding: 12px;
+  }
+
+  .reward-cards {
+    gap: 18px;
+  }
+
+  .benefits-card {
+    width: 40%;
+    margin-bottom: 15px;
+    height: auto;
+  }
+
+  .reward-card-title {
+    font-size: 16px;
+  }
+
+  .reward-card-text {
+    font-size: 12px;
+  }
+
+  .reward-card-image img {
+    width: 45px;
+    height: 45px;
+  }
+}
 
 /* Media query for screens with a width of 360px or less */
 @media (max-width: 360px) {
@@ -48,6 +176,9 @@
     width: 60px;
     height: 60px;
   }
+  .new-benefits-title {
+    width: 100%;
+  }
 }
 
 /* Media query for screens with a width of 320px or less */
@@ -69,7 +200,7 @@
   }
 
   .benefits-card {
-    width: 100%;
+    width: 80%;
     text-align: center;
     margin-bottom: 16px;
   }
@@ -89,5 +220,75 @@
   .reward-card-image img {
     width: 50px;
     height: 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width: 410px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+  .new-reward-card{
+    height: 240px;
+  }
+
+}
+@media (max-width: 430px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width: 440px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width: 470px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .new-benefits-title {
+    width: 100%;
+  }
+}
+@media (max-width:420px) {
+  .new-reward-card-text{
+    font-size: 12px;
   }
 }

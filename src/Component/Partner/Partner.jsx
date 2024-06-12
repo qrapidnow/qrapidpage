@@ -19,18 +19,18 @@ const Partner = () => {
   ];
 
   return (
-    <div
+    <div 
       style={{
         backgroundColor: "black",
         paddingTop: "48px",
-        paddingBottom: "48px",
+        paddingBottom: "138px",
         alignItems: "center",
         display: "flex",
         flexDirection: "column",
       }}
     >
       <div className="Aaaa" style={{ color: "white" }}>
-        Our Restaurant Partners
+        Our<spam style={{color:"green"}}> Restaurant </spam>Partners
       </div>
       <div className="cards-container">
         {restaurantData.map((restaurant, index) => (
