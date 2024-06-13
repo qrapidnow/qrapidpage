@@ -84,7 +84,8 @@ const Navbar = () => {
         )}
 
         <div className="main-title-new">
-          QR Menus &  <spam style={{color:"green"}}>Discounts</spam> Await – Go Scan Now!
+          QR Menus & <spam style={{ color: "green" }}>Discounts</spam> Await –
+          Go Scan Now!
         </div>
         <div className="description-new">
           Scan QR codes at your favorite restaurants for easy access to digital
@@ -98,42 +99,43 @@ const Navbar = () => {
       {modelOpen && (
         <div>
           <div
-  style={{
-    position: "fixed",
-    zIndex: "2000",
-    top: "0",
-    left: "0",
-    right: "0",
-    bottom: "0",
-    backgroundColor: "black",
-    opacity: "0.6",
-  }}
-></div>
-<div
-  style={{
-    position: "fixed",
-    zIndex: "2001", // Slightly higher than the overlay
-    top: "0",
-    left: "0",
-    right: "0",
-    height: "50%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "white",
-    borderRadius: "16px",
-    transition: "transform 0.3s ease",
-    transform: modelOpen ? "translateY(0)" : "translateY(-100%)",
-    color: "black",
-  }}
->
-          
+            style={{
+              position: "fixed",
+              zIndex: "2000",
+              top: "0",
+              left: "0",
+              right: "0",
+              bottom: "0",
+              backgroundColor: "black",
+              opacity: "0.6",
+            }}
+          ></div>
+          <div
+            style={{
+              position: "fixed",
+              zIndex: "2001", // Slightly higher than the overlay
+              top: "0",
+              left: "0",
+              right: "0",
+              height: "50%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "black",
+              borderRadius: "16px",
+              transition: "transform 0.3s ease",
+              transform: modelOpen ? "translateY(0)" : "translateY(-100%)",
+              color: "black",
+            }}
+          >
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                textAlign: "left",
+                backgroundColor: "black", // Optional: to match the image background
+                padding: "20px",
+                borderRadius: "10px",
               }}
             >
               <div style={{ paddingBottom: "40px" }}>
@@ -144,23 +146,37 @@ const Navbar = () => {
                     backgroundColor: "black",
                   }}
                   src="./Image/x.png"
-                  alt=""
+                  alt="Close"
                   onClick={() => setModelOpen(false)}
                 />
               </div>
 
-              <ul className="popup-menu-new">
+              <ul className="popup-menu-new" style={{ padding: 0, margin: 0 }}>
                 <li>
-                  <Link to="/" className="popup-link-new">
+                  <Link
+                    style={{ color: "white" }}
+                    to="/"
+                    className="popup-link-new"
+                  >
                     Home
                   </Link>
                 </li>
-                <li>Contact Us</li>
-                <li>
-                  {" "}
-                  <Link to="/about"> About Us</Link>{" "}
+                <li style={{ color: "white", listStyle: "none" }}>
+                  Contact Us
                 </li>
                 <li>
+                  <Link style={{ color: "white" }} to="/about">
+                    About Us
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "12px",
+                    backgroundColor: "white",
+                    borderRadius: "20px",
+                    listStyle: "none",
+                  }}
+                >
                   <Link to="/demo" className="popup-link-new">
                     For Restaurant
                   </Link>

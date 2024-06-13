@@ -101,30 +101,95 @@ const Main = () => {
             ) : null}
           </div>
           {modelOpen && (
-            <div className="popup-overlay">
-              <div className="popup-menu">
-                <img
-                  className="close-icon"
-                  src="./Image/x.png"
-                  alt="Close"
-                  onClick={toggleModel}
-                />
-                <ul>
+            <div>
+            <div
+              style={{
+                position: "fixed",
+                zIndex: "2000",
+                top: "0",
+                left: "0",
+                right: "0",
+                bottom: "0",
+                backgroundColor: "black",
+                opacity: "0.6",
+              }}
+            ></div>
+            <div
+              style={{
+                position: "fixed",
+                zIndex: "2001", // Slightly higher than the overlay
+                top: "0",
+                left: "0",
+                right: "0",
+                height: "35%",
+                width:"385px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: "black",
+                borderRadius: "16px",
+                transition: "transform 0.3s ease",
+                transform: modelOpen ? "translateY(0)" : "translateY(-100%)",
+                color: "black",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  backgroundColor: "black", // Optional: to match the image background
+                  padding: "20px",
+                  borderRadius: "10px",
+                }}
+              >
+                <div style={{ paddingBottom: "40px" }}>
+                  <img
+                    style={{
+                      height: "22px",
+                      cursor: "pointer",
+                      backgroundColor: "black",
+                    }}
+                    src="./Image/x.png"
+                    alt="Close"
+                    onClick={() => setModelOpen(false)}
+                  />
+                </div>
+  
+                <ul className="popup-menu-new" style={{ padding: 0, margin: 0 }}>
                   <li>
-                    <Link to="/">Home</Link>
+                    <Link
+                      style={{ color: "white" }}
+                      to="/"
+                      className="popup-link-new"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li style={{ color: "white", listStyle: "none" }}>
+                    Contact Us
                   </li>
                   <li>
-                    <Link to="/footer">Contact Us</Link>
+                    <Link style={{ color: "white" }} to="/about">
+                      About Us
+                    </Link>
                   </li>
-                  <li>
-                    <Link to="/about">About Us</Link>
-                  </li>
-                  <li>
-                    <Link to="/demo">For Restaurant</Link>
+                  <li
+                    style={{
+                      padding: "12px",
+                      backgroundColor: "white",
+                      borderRadius: "20px",
+                      listStyle: "none",
+                    }}
+                  >
+                    <Link to="/demo" className="popup-link-new">
+                      For Restaurant
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
+          </div>
           )}
         </div>
         <div className="main-content">

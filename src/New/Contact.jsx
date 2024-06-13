@@ -1,6 +1,5 @@
 import React from "react";
 import "./Styl.css";
-
 const Contact = () => {
   return (
     <div className="contact-container">
@@ -14,7 +13,7 @@ const Contact = () => {
         </div>
         <div className="contact-info">
           <div className="contact-item">
-            <p>00000000000000</p>
+            <p>9137997312</p>
             <img
               className="contact-icon"
               src="../Im/call.png"
@@ -22,19 +21,19 @@ const Contact = () => {
             />
           </div>
           <div className="contact-item">
-            <p>00000000000000</p>
+            <p>contact@qrapid.io</p>
             <img
               className="contact-icon"
-              src="../Im/call.png"
+              src="../Im/email.png"
               alt="Call Icon"
             />
           </div>
           <div className="contact-item">
-            <p>00000000000000</p>
+            <p>Mumbai</p>
             <img
               className="contact-icon"
-              src="../Im/call.png"
-              alt="Call Icon"
+              src="../../public/Im/gps.png"
+              
             />
           </div>
         </div>

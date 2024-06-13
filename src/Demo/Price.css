@@ -81,11 +81,12 @@
   gap: 26px;
   align-items: center;
   padding-top: 20px;
+
 }
 
 .price-icon {
   height: 20px;
-  background-color: white;
+  background-color: rgb(3, 3, 3);
 }
 
 .price-icon-img {

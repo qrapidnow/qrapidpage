@@ -80,9 +80,9 @@ const Footer = () => {
                 <div style={{ fontSize: "18px", fontWeight: "800" }}>
                   Company
                 </div>
-                <div style={{ fontSize: "18px" }}>Home</div>
-                <div style={{ fontSize: "18px" }}>About</div>
-                <div style={{ fontSize: "18px" }}>Careers</div>
+                <div style={{ fontSize: "18px" }}><Link style={{textDecoration:"none",color:"black"}} to="/">Home</Link></div>
+                <div style={{ fontSize: "18px" }}><Link style={{textDecoration:"none",color:"black"}} to="/about">About</Link></div>
+                <div style={{ fontSize: "18px" }}><Link style={{textDecoration:"none",color:"black"}} to="/career">Careers</Link></div>
               </div>
 
               <div
@@ -95,9 +95,10 @@ const Footer = () => {
                 <div style={{ fontSize: "18pxpx", fontWeight: "800" }}>
                   Documentation
                 </div>
-                <div style={{ fontSize: "18pxpx" }}>Help Centre</div>
-                <div style={{ fontSize: "18pxpx" }}>Privacy Policy</div>
-                <div style={{ fontSize: "18pxpx" }}>FAQ</div>
+                <div style={{ fontSize: "18pxpx" }}><Link style={{textDecoration:"none",color:"black"}} to="/contact"> Contact Us</Link></div>
+                <div style={{ fontSize: "18pxpx" }}><Link style={{textDecoration:"none",color:"black"}} to="/policy">Privacy Policy</Link></div>
+                <div style={{ fontSize: "18pxpx" }}><Link style={{textDecoration:"none",color:"black"}} to="/faq">FAQ</Link></div>
+                <div style={{ fontSize: "14px" }}><Link style={{textDecoration:"none",color:"black"}} to="/term">Terms & Conditions</Link></div>
               </div>
 
               <div
@@ -157,7 +158,7 @@ const Footer = () => {
             <div style={{ fontSize: "14px" }}>
               © QRapid All Rights Reserved 2024
             </div>
-            <div style={{ fontSize: "14px" }}>Terms & Conditions</div>
+           
           </div>
         </div>
       </div>

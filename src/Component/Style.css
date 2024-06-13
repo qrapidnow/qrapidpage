@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .main-new {
   margin: 0;
@@ -599,6 +600,11 @@
   }
  }
  @media (max-width:320px) {
+  .cta-button-new{
+    width: 65%;
+  }
+ }
+ @media (max-width:410px) {
   .cta-button-new{
     width: 65%;
   }
