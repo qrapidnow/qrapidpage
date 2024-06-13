@@ -46,7 +46,7 @@ const Navbar = () => {
             </div>
             <div>
               <ul className="nav-links-new">
-                <li className="nav-item-new">
+                <li style={{fontSize:"22px"}} className="nav-item-new">
                   <Link
                     style={{ textDecoration: "none", color: "white" }}
                     to="/"
@@ -54,15 +54,15 @@ const Navbar = () => {
                     Home
                   </Link>
                 </li>
-                <li className="nav-item-new">
+                <li  style={{fontSize:"22px"}}className="nav-item-new">
                   <Link
                     style={{ textDecoration: "none", color: "white" }}
-                    to="/footer"
+                    to="/contact"
                   >
                     Contact Us
                   </Link>
                 </li>
-                <li className="nav-item-new">
+                <li  style={{fontSize:"22px"}}className="nav-item-new">
                   <Link
                     style={{ textDecoration: "none", color: "white" }}
                     to="/about"
@@ -70,7 +70,7 @@ const Navbar = () => {
                     About Us
                   </Link>
                 </li>
-                <li className="highlighted-link-new">
+                <li  style={{fontSize:"18px"}}className="highlighted-link-new">
                   <Link
                     style={{ textDecoration: "none", color: "black" }}
                     to="/demo"
@@ -111,22 +111,24 @@ const Navbar = () => {
             }}
           ></div>
           <div
-            style={{
-              position: "fixed",
-              zIndex: "2001", // Slightly higher than the overlay
-              top: "0",
-              left: "0",
-              right: "0",
-              height: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundColor: "black",
-              borderRadius: "16px",
-              transition: "transform 0.3s ease",
-              transform: modelOpen ? "translateY(0)" : "translateY(-100%)",
-              color: "black",
-            }}
+           style={{
+            position: "fixed",
+            zIndex: "2001",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            backgroundColor: "black",
+            borderRadius: "16px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+            // maxWidth: "90%",
+            padding: "20px",
+            color: "white",
+            display:"flex",
+            flexDirection:"column",
+            alignItems:"center",
+            gap:"20px",
+            width:"60%"
+          }}
           >
             <div
               style={{
@@ -151,21 +153,21 @@ const Navbar = () => {
                 />
               </div>
 
-              <ul className="popup-menu-new" style={{ padding: 0, margin: 0 }}>
-                <li>
+              <ul  style={{ padding: 0, margin: 0,display:"flex",gap:"20px",flexDirection:"column",textDecoration:"none",listStyle:"none",alignItems:"center" }}>
+                <li >
                   <Link
-                    style={{ color: "white" }}
+                    style={{ color: "white",textDecoration:"none" }}
                     to="/"
-                    className="popup-link-new"
+                    // className="popup-link-new"
                   >
                     Home
                   </Link>
                 </li>
-                <li style={{ color: "white", listStyle: "none" }}>
+                <li>
                   Contact Us
                 </li>
-                <li>
-                  <Link style={{ color: "white" }} to="/about">
+                <li >
+                  <Link style={{ color: "white",textDecoration:"none" }} to="/about">
                     About Us
                   </Link>
                 </li>
@@ -175,9 +177,10 @@ const Navbar = () => {
                     backgroundColor: "white",
                     borderRadius: "20px",
                     listStyle: "none",
+                    // fontSize:"10px"
                   }}
                 >
-                  <Link to="/demo" className="popup-link-new">
+                  <Link style={{color:"black",fontSize:"12px",textDecoration:"none"}} to="/demo">
                     For Restaurant
                   </Link>
                 </li>
@@ -191,3 +194,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+

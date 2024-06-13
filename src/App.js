@@ -14,6 +14,7 @@ import Faq from "./New/Faq";
 import Policy from "./New/Policy";
 import Terms from "./New/Terms";
 import Career from "./New/Career";
+import Price from "./Demo/Price";
 function MainLayout() {
   return (
     <>
@@ -47,6 +48,7 @@ function App() {
         <Route path="/policy" element={<Policy />} />
         <Route path="/term" element={<Terms />} />
         <Route path="/Career" element={<Career />} />
+        <Route path="/Price" element={<Price />} />
       </Routes>
     </Router>
   );

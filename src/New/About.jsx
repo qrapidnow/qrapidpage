@@ -1,45 +1,163 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../New/Styl.css";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+  const [modelOpen, setModelOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleMenu = () => {
+    setModelOpen(!modelOpen);
+  };
+
   return (
     <div>
       <div className="header-container">
         <div className="logo-text-container">
           <img
             className="logo-image"
-            src="../../Image/black.png"
-            alt="QRapid Logo"
+            src="../../public/Image/black.png"
+            onClick={toggleMenu}
           />
-          <div className="logo-text">QRapid</div>
+          <div className="logo-textt">QRapid</div>
         </div>
-        <ul className="nav-links-new">
-          <li className="nav-item-new">
-            <Link style={{ textDecoration: "none", color: "black" }} to="/">
-              Home
-            </Link>
-          </li>
-          <li className="nav-item-new">
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/contact"
+        {!isMobile && (
+          <ul className="nav-links-new">
+            <li className="nav-item-new">
+              <Link style={{ textDecoration: "none", color: "black" }} to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item-new">
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/contact"
+              >
+                Contact Us
+              </Link>
+            </li>
+            <li className="nav-item-new">
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/faq"
+              >
+                How it works
+              </Link>
+            </li>
+            <li className="highlighted-link-new">
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/demo"
+              >
+                For Creators
+              </Link>
+            </li>
+          </ul>
+        )}
+
+        {isMobile && modelOpen && (
+          <div>
+         <div
+            style={{
+              position: "fixed",
+              zIndex: "2000",
+              top: "0",
+              left: "0",
+              right: "0",
+              bottom: "0",
+              backgroundColor: "black",
+              opacity: "0.6",
+            }}
+          ></div>
+          <div
+            style={{
+              position: "fixed",
+              zIndex: "2001", // Slightly higher than the overlay
+              top: "0",
+              left: "0",
+              right: "0",
+              height: "50%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "black",
+              borderRadius: "16px",
+              transition: "transform 0.3s ease",
+              transform: modelOpen ? "translateY(0)" : "translateY(-100%)",
+              color: "black",
+              height:"auto"
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                backgroundColor: "black", // Optional: to match the image background
+                padding: "20px",
+                borderRadius: "10px",
+              }}
             >
-              Contact Us
-            </Link>
-          </li>
-          <li className="nav-item-new">
-            <Link style={{ textDecoration: "none", color: "black" }} to="">
-              How it works
-            </Link>
-          </li>
-          <li className="highlighted-link-new">
-            <Link style={{ textDecoration: "none", color: "black" }} to="/demo">
-              For Creators
-            </Link>
-          </li>
-        </ul>
+              <div style={{ paddingBottom: "40px" }}>
+                <img
+                  style={{
+                    height: "22px",
+                    cursor: "pointer",
+                    backgroundColor: "black",
+                  }}
+                  src="./Image/x.png"
+                  alt="Close"
+                  onClick={() => setModelOpen(false)}
+                />
+              </div>
+
+              <ul className="popup-menu-new" style={{ padding: 0, margin: 0 }}>
+                <li>
+                  <Link
+                    style={{ color: "white" }}
+                    to="/"
+                    className="popup-link-new"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li style={{ color: "white", listStyle: "none" }}>
+                  Contact Us
+                </li>
+                <li>
+                  <Link style={{ color: "white" }} to="/about">
+                    About Us
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "12px",
+                    backgroundColor: "white",
+                    borderRadius: "20px",
+                    listStyle: "none",
+                  }}
+                >
+                  <Link to="/demo" className="popup-link-new">
+                    For Restaurant
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        )}
       </div>
+
       <div className="about-container">
         <h1>About Us</h1>
         <p>

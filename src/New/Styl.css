@@ -1,63 +1,147 @@
 /* About.css */
 
+/* General container for logo and text */
+.logo-text-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Space between the logo and text */
+}
+
+/* Image styling */
+.logo-image {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
+.logo-textt{
+  color: #111;
+}
+/* Text styling */
+.logo-text {
+  font-size: 1rem; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #fffbfb;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .logo-text-container {
+    gap: 8px; /* Reduce gap on smaller screens */
+  }
+
+  .logo-image {
+    width: 40px; /* Smaller logo on smaller screens */
+  }
+
+  .logo-text {
+    font-size: 1.2rem; /* Smaller text on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text-container {
+    gap: 6px; /* Further reduce gap on very small screens */
+  }
+
+  .logo-image {
+    width: 35px; /* Even smaller logo on very small screens */
+  }
+
+  .logo-text {
+    font-size: 1rem; /* Even smaller text on very small screens */
+  }
+}
+
 .about-container {
-    width: 60%;
-    margin: 10px auto;
-    padding: 20px;
-    text-align: left;
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+.about-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-container {
+    width: 90%;
   }
-  
+
   .about-heading {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 28px;
   }
-  
+
   .about-content {
-    line-height: 1.6;
+    font-size: 16px;
   }
-  /* Container for the header */
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    width: 95%;
+  }
+
+  .about-heading {
+    font-size: 24px;
+  }
+
+  .about-content {
+    font-size: 14px;
+  }
+}
+
+/* Header Container */
 .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
-/* Container for the logo and text */
-.logo-text-container {
+/* Logo and Text Container */
+/* .logo-text-container {
   display: flex;
   gap: 12px;
-}
+} */
 
-/* Styling for the logo image */
-.logo-image {
+/* Logo Image */
+/* .logo-image {
   height: 40px;
-}
+} */
 
-/* Styling for the QRapid text */
+/* QRapid Text */
 .logo-text {
   font-size: 18px;
 }
 
-/* Navigation links container */
-.nav-links-new {
+/* Navigation Links Container */
+/* .nav-links-new {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-}
+} */
 
-/* Individual navigation item */
+/* Individual Navigation Item */
 .nav-item-new {
   margin-right: 20px;
 }
 
-/* Highlighted navigation link */
+/* Highlighted Navigation Link */
 .highlighted-link-new {
   font-weight: bold;
 }
 
-/* About page container */
+/* About Container */
 .about-container {
   padding: 20px;
 }
@@ -69,13 +153,13 @@
   margin-bottom: 16px;
 }
 
-/* Paragraph text */
+/* Paragraph Text */
 .about-container p {
   margin-bottom: 16px;
   line-height: 1.6;
 }
 
-/* List styling */
+/* List Styling */
 .about-container ul {
   margin-left: 20px;
 }
@@ -84,9 +168,7 @@
   margin-bottom: 8px;
 }
 
-
-  /* Styl.css */
-
+/* FAQ Styles */
 .faq-container {
   width: 100%;
   display: flex;
@@ -145,231 +227,304 @@
 .faq-divider {
   opacity: 0.4;
 }
+
+/* Responsive FAQ Styles */
+@media (max-width: 768px) {
+  .faq-title-container,
+  .faq-items-container {
+    width: 90%;
+  }
+
+  .faq-title {
+    font-size: 32px;
+  }
+
+  .faq-question-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-title-container,
+  .faq-items-container {
+    width: 95%;
+  }
+
+  .faq-title {
+    font-size: 28px;
+  }
+
+  .faq-question-title {
+    font-size: 18px;
+  }
+}
+
+/* Privacy Policy and Terms Styles */
+.privacy-policy-container,
+.terms-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.privacy-policy-container h1,
+.terms-container h1 {
+  text-align: center;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.privacy-policy-container h2,
+.terms-container h2 {
+  color: #222;
+  margin-top: 20px;
+}
+
+.privacy-policy-container h3,
+.terms-container h3 {
+  color: #444;
+  margin-top: 10px;
+}
+
+.privacy-policy-container p,
+.terms-container p {
+  margin: 10px 0;
+}
+
+.privacy-policy-container .last-updated,
+.terms-container .last-updated {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.privacy-policy-container ul,
+.terms-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.privacy-policy-container li,
+.terms-container li {
+  margin: 5px 0;
+}
+
+/* Responsive Privacy Policy and Terms Styles */
+@media (max-width: 768px) {
+  .privacy-policy-container,
+  .terms-container {
+    padding: 10px;
+  }
+}
+
+/* Career Styles */
+.career-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.career-container h1 {
+  text-align: center;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.career-container h2 {
+  color: #222;
+  margin-top: 20px;
+}
+
+.career-container h3 {
+  color: #444;
+  margin-top: 10px;
+}
+
+.career-container p {
+  margin: 10px 0;
+}
+
+.career-container .intro-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.career-container .benefits-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.career-container .job-opening {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.career-container .application-instruction {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.career-container a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.career-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Career Styles */
+@media (max-width: 768px) {
+  .career-container {
+    padding: 10px;
+  }
+}
+
+/* Styl.css */
+
+/* Header Styles */
+.header-container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.logo-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.nav-links-new {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item-new {
+  font-size: 1rem;
+}
+
+.highlighted-link-new {
+  font-weight: bold;
+}
+
+.popup-menu-new {
+  list-style: none;
+  text-align: center;
+}
+
+.popup-link-new {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Contact Styles */
 .contact-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
 .contact-content {
-  text-align: center;
-  gap:"20px";
-  display: flex;
-  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
   padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-header {
-  margin-bottom: 40px;
-  gap: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .contact-title {
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .contact-description {
-  font-size: 20px;
+  font-size: 1rem;
+  color: #666;
 }
 
 .contact-info {
   display: flex;
-  justify-content: space-between;
-  gap: 120px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item p {
+  margin: 0;
 }
 
 .contact-icon {
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .about-heading {
-      font-size: 28px;
-    }
-  
-    .about-content {
-      font-size: 16px;
-    }
+/* Responsive Contact Styles */
+@media (min-width: 768px) {
+  .contact-info {
+    flex-direction: row;
+    justify-content: space-around;
   }
-  
-  @media (max-width: 480px) {
-    .about-heading {
-      font-size: 24px;
-    }
-  
-    .about-content {
-      font-size: 14px;
-    }
+
+  .contact-item {
+    width: 30%;
   }
-  .privacy-policy-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+  .contact-title {
+    font-size: 2.5rem;
   }
-  
-  h1 {
-    text-align: center;
-    color: #111;
-    margin-bottom: 20px;
+
+  .contact-description {
+    font-size: 1.25rem;
   }
-  
-  h2 {
-    color: #222;
-    margin-top: 20px;
-  }
-  
-  h3 {
-    color: #444;
-    margin-top: 10px;
-  }
-  
-  p {
-    margin: 10px 0;
-  }
-  
-  .last-updated {
-    text-align: center;
-    font-style: italic;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  li {
-    margin: 5px 0;
-  }
-  
-  @media (max-width: 768px) {
-    .privacy-policy-container {
-      padding: 10px;
-    }
-  }
-  .terms-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #111;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    color: #222;
-    margin-top: 20px;
-  }
-  
-  h3 {
-    color: #444;
-    margin-top: 10px;
-  }
-  
-  p {
-    margin: 10px 0;
-  }
-  
-  .last-updated {
-    text-align: center;
-    font-style: italic;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  li {
-    margin: 5px 0;
-  }
-  
-  @media (max-width: 768px) {
-    .terms-container {
-      padding: 10px;
-    }
-  }
-  .career-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #111;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    color: #222;
-    margin-top: 20px;
-  }
-  
-  h3 {
-    color: #444;
-    margin-top: 10px;
-  }
-  
-  p {
-    margin: 10px 0;
-  }
-  
-  .intro-text {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .benefits-list {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .job-opening {
-    border: 1px solid #ddd;
+
+  .contact-item {
     padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
   }
-  
-  .application-instruction {
-    text-align: center;
-    margin-top: 20px;
+
+  .contact-icon {
+    width: 32px;
+    height: 32px;
   }
-  
-  a {
-    color: #007BFF;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .career-container {
-      padding: 10px;
-    }
-  }
-    
+}
